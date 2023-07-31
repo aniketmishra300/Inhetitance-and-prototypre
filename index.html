@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h2>Q1. Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype</h2>
+    <h3><pre>        
+        const parent = {
+            surname : 'Mishra',
+            display : function()
+            {
+                console.log("Hello .. Aniket.....")
+            }
+        }
+
+        const child1 = Object.create(parent)
+        child1.name = "Aniket";
+        console.log(`${child1.name} ${child1.surname}`)
+    </pre></h3>
+    <h2>Q2. Write code to explain prototype chaining</h2>
+    <h3><pre>let arr = [a,b,c]
+
+        The prototype chain is a mechanism that allows objects to inherit properties and methods from other objects.
+         Every object can have exactly one prototype object. 
+        That prototype object can also have a prototype object, and so on, creating a chain of inheritied properties and methods.
+
+        In the above code the prototype of that is initially is array and after that in proto it will shows object and after that once
+         again it will show object and at the end the proto shows the null. It means the chain is reached at its maximum.
+    </pre></h3>
+
+</body>
+</html>
