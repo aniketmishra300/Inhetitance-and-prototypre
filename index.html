@@ -32,6 +32,36 @@
         In the above code the prototype of that is initially is array and after that in proto it will shows object and after that once
          again it will show object and at the end the proto shows the null. It means the chain is reached at its maximum.
     </pre></h3>
+    <h2>Q3.Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays</h2>
+    <h3><pre>
+        var arr = [1,2,3,4,5,2]
+
+        function sum(arr)
+        {
+
+        let ans  = arr.reduce((acc,curr)=>acc+curr);
+        console.log(ans)
+        }sum(arr)
+    </pre></h3>
+    <h2>Q4.Write a JavaScript function to retrieve all the names of object's own and inherited properties.</h2>
+    <h3><pre>
+        class Animal
+        {     
+            constructor(name,age)
+            {      
+           this.name = name;        
+            this.age = age;     
+            }     
+        
+            demo(){         
+            console.log(this.name,this.age);     
+            } 
+        }
+        //inherit class class Dog extends Animal{
+
+              } 
+        let value = new Dog('tommy',11); value.demo();
+    </pre></h3>
 
 </body>
 </html>
